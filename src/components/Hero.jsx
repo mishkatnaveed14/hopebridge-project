@@ -1,5 +1,8 @@
+import { lazy, Suspense } from "react";
 import { FaHeart } from "react-icons/fa";
 import { hero, contact } from "../data/siteData.js";
+
+const HopeOrbit = lazy(() => import("./HopeOrbit.jsx"));
 
 export default function Hero() {
   return (
@@ -21,6 +24,9 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero-image-wrap">
+          <Suspense fallback={null}>
+            <HopeOrbit />
+          </Suspense>
           <div className="hero-image-frame">
             <img
               src={hero.image}
