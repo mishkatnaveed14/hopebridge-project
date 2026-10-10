@@ -48,5 +48,5 @@ Start the development server:
 npm run dev
 
 
-Made with ❤️ for HopeBridge.
+## Made with ❤️ for HopeBridge.
 
